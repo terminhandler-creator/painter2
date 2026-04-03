@@ -2,8 +2,8 @@
 
 import { useEffect, useRef } from "react";
 
-const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL || "";
-const SUPABASE_ANON_KEY = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || "";
+const SUPABASE_URL = "https://obrstpctgkclloqhwxfk.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9icnN0cGN0Z2tjbGxvcWh3eGZrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUyMTI4NTksImV4cCI6MjA5MDc4ODg1OX0.IPpKxE8mWaaTajxbvYISYGjZBzamj5ARfS_Ae4gtKRw";
 
 function getRefCode(): string | null {
   if (typeof window === "undefined") return null;
