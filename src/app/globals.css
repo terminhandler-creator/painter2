@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-primary-50: #f8ead8;
+  --color-primary-100: #f0d0a8;
+  --color-primary-200: #e4b070;
+  --color-primary-300: #d48838;
+  --color-primary-400: #c06818;
+  --color-primary-500: #9e5414;
+  --color-primary-600: #7e4210;
+  --color-primary-700: #60320c;
+  --color-primary-800: #462408;
+  --color-primary-900: #301806;
+  --font-sans: var(--font-body);
+  --font-display: var(--font-heading);
+}
+
+body {
+  background: #fdf7f2;
+  color: #1a1a1a;
+  font-family: var(--font-sans), system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+[data-theme="dark"] body { background: #0f172a; color: #e2e8f0; }
+[data-theme="dark"] .bg-white { background: #1e293b; }
+[data-theme="dark"] .bg-primary-50 { background: #1e293b; }
+[data-theme="dark"] .text-gray-600 { color: #94a3b8; }
+[data-theme="dark"] .text-gray-700 { color: #cbd5e1; }
+[data-theme="dark"] .border-gray-200 { border-color: #334155; }
+[data-theme="dark"] .border-primary-100 { border-color: #334155; }
+
+[data-theme="warm"] { --color-primary-500: #c87020; --color-primary-600: #a85c18; }
+
+html, html * { transition: background-color 0.4s ease, border-color 0.4s ease, color 0.4s ease; }
